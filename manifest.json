@@ -1,0 +1,44 @@
+{
+  "name": "OpenPay.business",
+  "short_name": "OpenPay",
+  "description": "Modern payment platform for businesses — invoicing, payment links, and transaction tracking.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "categories": ["finance", "business", "productivity"],
+  "lang": "en",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' rx='38' fill='%232563eb'/><text y='135' x='28' font-size='110' font-weight='800' fill='white' font-family='sans-serif'>OP</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='96' fill='%232563eb'/><text y='360' x='70' font-size='300' font-weight='800' fill='white' font-family='sans-serif'>OP</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "OpenPay.business Landing Page"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "short_name": "Dashboard",
+      "description": "Open merchant dashboard",
+      "url": "/dashboard.html",
+      "icons": [{ "src": "/favicon.ico", "sizes": "192x192" }]
+    }
+  ]
+}

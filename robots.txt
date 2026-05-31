@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Disallow: /dashboard.html
+
+Sitemap: https://openpay.business/sitemap.xml
+
+# OpenPay.business robots.txt
+# Contact: salatrir@gmail.com

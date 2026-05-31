@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenPay.business — Modern Payment Platform for Businesses</title>
+  <meta name="description" content="OpenPay.business is a modern fintech platform for online payments, business invoicing, payment links, and transaction tracking. Start free today." />
+  <meta name="keywords" content="online payments, business invoicing, payment links, fintech, payment platform, merchant dashboard, transaction tracking" />
+  <meta name="author" content="OpenPay.business" />
+  <link rel="canonical" href="https://openpay.business/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://openpay.business/" />
+  <meta property="og:title"       content="OpenPay.business — Modern Payment Platform" />
+  <meta property="og:description" content="Accept payments, create invoices, generate payment links, and track transactions — all in one place." />
+  <meta property="og:image"       content="https://openpay.business/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="OpenPay.business" />
+  <meta name="twitter:description" content="The modern payment platform for growing businesses." />
+  <meta name="twitter:image"       content="https://openpay.business/og-image.png" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "OpenPay.business",
+    "applicationCategory": "FinanceApplication",
+    "description": "Modern payment platform for businesses — invoicing, payment links, and transaction tracking.",
+    "url": "https://openpay.business",
+    "offers": [
+      { "@type": "Offer", "name": "Free Plan",       "price": "0",  "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Pro Plan",        "price": "29", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Enterprise Plan", "price": "99", "priceCurrency": "USD" }
+    ],
+    "contactPoint": { "@type": "ContactPoint", "email": "salatrir@gmail.com" }
+  }
+  </script>
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232563eb'/><text y='22' x='5' font-size='18' font-weight='800' fill='white' font-family='sans-serif'>OP</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ── Header ──────────────────────────────────────────── -->
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="/" class="logo" aria-label="OpenPay.business Home">
+      <div class="logo-mark">OP</div>
+      <span class="logo-text">OpenPay<span>.business</span></span>
+    </a>
+
+    <nav class="nav-main" aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#security">Security</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="header-actions">
+      <button id="themeToggle" aria-label="Toggle theme"></button>
+      <a href="dashboard.html" class="btn btn-outline btn-sm">Sign In</a>
+      <a href="#pricing" class="btn btn-primary btn-sm" data-plan-cta="free">Get Started Free</a>
+      <button id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <a href="#features">Features</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#security">Security</a>
+  <a href="#faq">FAQ</a>
+  <a href="dashboard.html">Sign In</a>
+</nav>
+
+<!-- ── Hero ────────────────────────────────────────────── -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero-bg-grid" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge"><span class="dot"></span> Now live — Start accepting payments today</div>
+      <h1 class="hero-title" id="hero-heading">
+        The Payment Platform<br>Built for <span class="gradient-text">Modern Business</span>
+      </h1>
+      <p class="hero-sub">Accept payments, generate invoices, create shareable payment links, and track every transaction — all in one powerful dashboard.</p>
+      <div class="hero-cta">
+        <a href="dashboard.html" class="btn btn-primary btn-lg">Open Dashboard →</a>
+        <a href="#features" class="btn btn-ghost btn-lg">See Features</a>
+      </div>
+      <div class="hero-ticker">
+        <span>🔴 Live</span>
+        <span id="liveTicker">💳 Payment received · $1,240.00</span>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-card-stack">
+        <div class="mock-card mock-card-main">
+          <div class="card-chip"></div>
+          <div class="card-number">•••• •••• •••• 4821</div>
+          <div class="card-footer">
+            <div><div class="card-name">Card Holder</div><div style="font-weight:600;font-size:.95rem">Your Business</div></div>
+            <div class="card-brand">OP</div>
+          </div>
+        </div>
+        <div class="mock-card mock-card-stats">
+          <div class="stat-label">Monthly Revenue</div>
+          <div class="stat-value">$37.4K</div>
+          <div class="stat-change">↑ +18.3% vs last month</div>
+        </div>
+        <div class="mock-card mock-card-notify">
+          <div class="notify-icon">✅</div>
+          <div class="notify-text">
+            <strong>Payment Received</strong>
+            <span>$4,800 · Acme Corp</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Trust Bar ──────────────────────────────────────── -->
+<div class="trust-bar" aria-label="Trusted by businesses">
+  <div class="trust-bar-inner">
+    <span class="trust-label">Trusted by teams at</span>
+    <div class="trust-logos">
+      <span class="trust-logo">ACMECORP</span>
+      <span class="trust-logo">NOVATECH</span>
+      <span class="trust-logo">GLOBALRETAIL</span>
+      <span class="trust-logo">BRIGHTMIND</span>
+      <span class="trust-logo">STARTUPXYZ</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── Stats ─────────────────────────────────────────── -->
+<section class="stats-section" aria-label="Platform statistics">
+  <div class="stats-grid">
+    <div class="stat-item reveal">
+      <div class="number" data-target="50000" data-suffix="+">0</div>
+      <div class="label">Businesses Powered</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-1">
+      <div class="number" data-target="2.4" data-prefix="$" data-suffix="B+">0</div>
+      <div class="label">Payments Processed</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <div class="number" data-target="99.9" data-suffix="% Uptime">0</div>
+      <div class="label">Platform Reliability</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-3">
+      <div class="number" data-target="150" data-suffix="+ Countries">0</div>
+      <div class="label">Global Reach</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Features ──────────────────────────────────────── -->
+<section id="features" class="features-section" aria-labelledby="features-heading">
+  <div class="features-inner">
+    <div class="section-header reveal">
+      <span class="section-tag">Features</span>
+      <h2 class="section-title" id="features-heading">Everything your business needs to get paid</h2>
+      <p class="section-sub">A complete payment infrastructure designed for speed, simplicity, and scale.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">💳</div>
+        <h3 class="feature-title">Online Payments</h3>
+        <p class="feature-desc">Accept credit cards, bank transfers, and digital wallets from customers worldwide with instant confirmation and low fees.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon">📄</div>
+        <h3 class="feature-title">Smart Invoicing</h3>
+        <p class="feature-desc">Create professional invoices in seconds, send them to clients, and track payment status — all from your dashboard.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon">🔗</div>
+        <h3 class="feature-title">Payment Links</h3>
+        <p class="feature-desc">Generate shareable payment links for any amount. Share via email, Slack, or social — no checkout page needed.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">📊</div>
+        <h3 class="feature-title">Transaction Tracking</h3>
+        <p class="feature-desc">Real-time transaction history with advanced filters, export capabilities, and searchable records for your whole team.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon">🏪</div>
+        <h3 class="feature-title">Merchant Dashboard</h3>
+        <p class="feature-desc">A clean, fast merchant dashboard with everything you need to manage your business finances in one place.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon">📈</div>
+        <h3 class="feature-title">Business Analytics</h3>
+        <p class="feature-desc">Visualize revenue trends, expense breakdowns, and monthly performance with interactive charts and insights.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Pricing ────────────────────────────────────────── -->
+<section id="pricing" class="pricing-section" aria-labelledby="pricing-heading">
+  <div class="pricing-inner">
+    <div class="section-header centered reveal">
+      <span class="section-tag">Pricing</span>
+      <h2 class="section-title" id="pricing-heading">Simple, transparent pricing</h2>
+      <p class="section-sub">No hidden fees. No surprises. Scale as you grow.</p>
+    </div>
+
+    <div class="pricing-toggle reveal" role="group" aria-label="Billing period">
+      <button class="active" data-period="monthly">Monthly</button>
+      <button data-period="annual">Annual <span class="save-badge">Save 20%</span></button>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- Free -->
+      <div class="pricing-card reveal">
+        <div class="plan-badge" style="background:#64748b">Free</div>
+        <div class="plan-name">Starter</div>
+        <div class="plan-desc">Perfect for freelancers and side projects getting started.</div>
+        <div class="plan-price">
+          <span class="currency">$</span>
+          <span class="amount"><span class="price-val" data-plan="free">0</span></span>
+          <span class="price-period">/month</span>
+        </div>
+        <ul class="plan-features">
+          <li>Up to 50 transactions/month</li>
+          <li>5 payment links</li>
+          <li>Basic invoicing (10/mo)</li>
+          <li>Dashboard overview</li>
+          <li>Email support</li>
+          <li class="disabled">Advanced analytics</li>
+          <li class="disabled">Custom branding</li>
+          <li class="disabled">API access</li>
+        </ul>
+        <a href="dashboard.html" class="btn btn-outline" style="width:100%" data-plan-cta="free">Get Started Free</a>
+      </div>
+
+      <!-- Pro (featured) -->
+      <div class="pricing-card featured reveal reveal-delay-1">
+        <div class="plan-badge">Most Popular</div>
+        <div class="plan-name">Pro</div>
+        <div class="plan-desc">For growing businesses that need more power and flexibility.</div>
+        <div class="plan-price">
+          <span class="currency">$</span>
+          <span class="amount"><span class="price-val" data-plan="pro">29</span></span>
+          <span class="price-period">/month</span>
+        </div>
+        <ul class="plan-features">
+          <li>Unlimited transactions</li>
+          <li>Unlimited payment links</li>
+          <li>Unlimited invoicing</li>
+          <li>Advanced analytics</li>
+          <li>Custom branding</li>
+          <li>Priority support</li>
+          <li>CSV / PDF exports</li>
+          <li class="disabled">White-label</li>
+        </ul>
+        <a href="dashboard.html" class="btn btn-primary" style="width:100%" data-plan-cta="pro">Start Pro Trial</a>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="pricing-card reveal reveal-delay-2">
+        <div class="plan-badge" style="background:#7c3aed">Enterprise</div>
+        <div class="plan-name">Enterprise</div>
+        <div class="plan-desc">Full-stack financial infrastructure for large teams and high volume.</div>
+        <div class="plan-price">
+          <span class="currency">$</span>
+          <span class="amount"><span class="price-val" data-plan="enterprise">99</span></span>
+          <span class="price-period">/month</span>
+        </div>
+        <ul class="plan-features">
+          <li>Everything in Pro</li>
+          <li>White-label solution</li>
+          <li>Dedicated account manager</li>
+          <li>SLA guarantee (99.99%)</li>
+          <li>Full API access</li>
+          <li>Custom integrations</li>
+          <li>Team roles & permissions</li>
+          <li>Audit logs</li>
+        </ul>
+        <a href="#" class="btn btn-outline" style="width:100%" data-plan-cta="enterprise">Contact Sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Security ───────────────────────────────────────── -->
+<section id="security" class="security-section" aria-labelledby="security-heading">
+  <div class="security-inner">
+    <div class="reveal">
+      <span class="section-tag">Security</span>
+      <h2 class="section-title" id="security-heading">Bank-grade security, built in</h2>
+      <p class="section-sub">Your data and your customers' payment information are protected with the highest security standards in the industry.</p>
+      <div class="security-badges">
+        <div class="security-badge">
+          <span class="sec-icon">🔒</span>
+          <div><div class="sec-label">256-bit SSL</div><div class="sec-sub">End-to-end encryption</div></div>
+        </div>
+        <div class="security-badge">
+          <span class="sec-icon">🛡️</span>
+          <div><div class="sec-label">PCI DSS Level 1</div><div class="sec-sub">Compliance certified</div></div>
+        </div>
+        <div class="security-badge">
+          <span class="sec-icon">👁️</span>
+          <div><div class="sec-label">Fraud Detection</div><div class="sec-sub">AI-powered monitoring</div></div>
+        </div>
+        <div class="security-badge">
+          <span class="sec-icon">🔐</span>
+          <div><div class="sec-label">2FA Ready</div><div class="sec-sub">Multi-factor auth</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="security-visual reveal reveal-delay-1">
+      <div class="lock-circle">🔒</div>
+      <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:.5rem">Your payments are safe</h3>
+      <p style="font-size:.85rem;color:var(--c-muted);margin-bottom:1rem">All transactions are encrypted and monitored 24/7. This is a mock demonstration — no real payment processing occurs.</p>
+      <span class="enc-badge">✓ Mock Data Only — No Real Transactions</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ─────────────────────────────────────────────── -->
+<section id="faq" class="faq-section" aria-labelledby="faq-heading">
+  <div class="faq-inner">
+    <div class="section-header centered reveal">
+      <span class="section-tag">FAQ</span>
+      <h2 class="section-title" id="faq-heading">Frequently asked questions</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Is OpenPay.business a real payment processor? <span class="faq-arrow">▾</span></button>
+        <div class="faq-a"><p>This is a frontend demonstration project. OpenPay.business is a mock fintech UI built to showcase design and functionality. No real payment processing occurs and all data is stored locally in your browser.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How does the dashboard work? <span class="faq-arrow">▾</span></button>
+        <div class="faq-a"><p>The dashboard uses localStorage to persist mock data between sessions. You can add transactions, create payment links, generate invoices, and view analytics — all simulated with realistic fake data.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Can I deploy this to GitHub Pages? <span class="faq-arrow">▾</span></button>
+        <div class="faq-a"><p>Yes! This is a fully static frontend project. Simply push to a GitHub repository and enable GitHub Pages. No server, no backend, no build step required.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What currencies are supported? <span class="faq-arrow">▾</span></button>
+        <div class="faq-a"><p>The UI currently displays USD. In a production implementation, multi-currency support including EUR, GBP, JPY, and 130+ currencies can be integrated via APIs like Stripe or PayPal.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How do I reset all dashboard data? <span class="faq-arrow">▾</span></button>
+        <div class="faq-a"><p>Open your browser's developer tools, go to Application → Local Storage, and clear all entries prefixed with "op_". The dashboard will reload with fresh seed data on next visit.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ─────────────────────────────────────────────── -->
+<section class="cta-section" aria-labelledby="cta-heading">
+  <div class="cta-inner reveal">
+    <h2 class="cta-title" id="cta-heading">Ready to get paid faster?</h2>
+    <p class="cta-sub">Join thousands of businesses already using OpenPay to streamline their payments.</p>
+    <div class="cta-actions">
+      <a href="dashboard.html" class="btn btn-white btn-lg">Open Dashboard Free →</a>
+      <a href="mailto:salatrir@gmail.com" class="btn btn-outline-white btn-lg">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ──────────────────────────────────────────── -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-mark" style="background:linear-gradient(135deg,#3b82f6,#1d4ed8)">OP</div>
+          <span style="color:#fff;font-weight:700">OpenPay<span style="color:#3b82f6">.business</span></span>
+        </div>
+        <p>The modern payment platform for growing businesses. Accept payments, send invoices, and track everything in one place.</p>
+        <p style="margin-top:.75rem;font-size:.8rem">📧 <a href="mailto:salatrir@gmail.com" style="color:#3b82f6">salatrir@gmail.com</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="#security">Security</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">API Reference</a></li>
+          <li><a href="#">Status Page</a></li>
+          <li><a href="#">Changelog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="mailto:salatrir@gmail.com">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 OpenPay.business. All rights reserved. This is a frontend demo — no real payments processed.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Signup Modal ────────────────────────────────────── -->
+<div class="modal" id="signupModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h2 class="modal-title" id="modalTitle">Create your free account</h2>
+      <button class="modal-close" id="closeSignup" aria-label="Close">✕</button>
+    </div>
+    <p style="font-size:.85rem;color:var(--c-muted);margin-bottom:1.5rem">
+      Selected plan: <strong id="modalPlanName">Free</strong>
+    </p>
+    <form id="signupForm">
+      <div class="form-group">
+        <label class="form-label" for="signupName">Full Name</label>
+        <input class="form-input" id="signupName" name="name" type="text" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="signupEmail">Business Email</label>
+        <input class="form-input" id="signupEmail" name="email" type="email" placeholder="you@company.com" required />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="signupPass">Password</label>
+        <input class="form-input" id="signupPass" name="password" type="password" placeholder="Min 8 characters" required minlength="8" />
+      </div>
+      <div class="form-actions">
+        <button type="button" class="btn btn-ghost" id="closeSignup2" onclick="document.getElementById('signupModal').classList.remove('visible');document.body.style.overflow=''">Cancel</button>
+        <button type="submit" class="btn btn-primary">Create Account →</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
